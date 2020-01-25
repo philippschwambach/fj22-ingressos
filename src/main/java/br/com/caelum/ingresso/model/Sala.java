@@ -32,7 +32,7 @@ public class Sala {
     @OneToMany(fetch = FetchType.EAGER)
     private Set<Lugar> lugares = new HashSet<>();
     
-    private BigDecimal preco = BigDecimal.ZERO;
+    private BigDecimal preco = BigDecimal.ZERO; 
 
 	/**
      * @deprecated hibernate only
@@ -43,8 +43,8 @@ public class Sala {
 
     public Sala(String nome, BigDecimal preco) {
         this.nome = nome;
-        this.preco = preco;
-    }
+        this.preco = preco; 
+    } 
 
     public Integer getId() {
         return id;
@@ -52,7 +52,7 @@ public class Sala {
 
     public void setId(Integer id) {
         this.id = id;
-    }
+    } 
 
     public String getNome() {
         return nome;
