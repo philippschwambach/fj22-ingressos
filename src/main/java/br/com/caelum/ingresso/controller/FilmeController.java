@@ -80,7 +80,6 @@ public class FilmeController {
         return modelAndView;
     }
 
-
     @DeleteMapping("/admin/filme/{id}")
     @ResponseBody
     @Transactional
