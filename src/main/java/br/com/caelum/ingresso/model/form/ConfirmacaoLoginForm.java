@@ -1,11 +1,15 @@
-package br.com.caelum.ingresso.model;
+package br.com.caelum.ingresso.model.form;
 
 import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import br.com.caelum.ingresso.configuracao.SecurityConfiguration;
 import br.com.caelum.ingresso.dao.UsuarioDao;
+import br.com.caelum.ingresso.model.Permissao;
+import br.com.caelum.ingresso.model.Token;
+import br.com.caelum.ingresso.model.Usuario;
 
 public class ConfirmacaoLoginForm {
 

@@ -13,9 +13,9 @@ import org.springframework.web.servlet.ModelAndView;
 import br.com.caelum.ingresso.dao.UsuarioDao;
 import br.com.caelum.ingresso.helper.TokenHelper;
 import br.com.caelum.ingresso.mail.EmailNovoUsuario;
-import br.com.caelum.ingresso.model.ConfirmacaoLoginForm;
 import br.com.caelum.ingresso.model.Token;
 import br.com.caelum.ingresso.model.Usuario;
+import br.com.caelum.ingresso.model.form.ConfirmacaoLoginForm;
 
 
 @Controller
