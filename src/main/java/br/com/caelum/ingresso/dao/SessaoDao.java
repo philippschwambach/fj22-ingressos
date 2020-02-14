@@ -12,12 +12,12 @@ import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
 
 @Repository
-public class SessaoDao {
+public class SessaoDao { 
 	
 	@PersistenceContext
 	private EntityManager manager;
 
-	public void save(Sessao sessao) {
+	public void save(Sessao sessao) { 
 		manager.persist(sessao);
 	}
 	
@@ -30,7 +30,7 @@ public class SessaoDao {
         manager.remove(findOne(id));
     }
 
-	private Sessao findOne(Integer id) {
+	public Sessao findOne(Integer id) {
 		return manager.find(Sessao.class, id);
 	} 
 	
